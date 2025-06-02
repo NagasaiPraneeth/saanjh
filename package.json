@@ -1,0 +1,41 @@
+{
+  "name": "new_backend",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "setup": "node setup.js",
+    "build": "cd ../frontend && npm install && npm run build && cd ../backend && mkdir -p build && cp -r ../frontend/dist/* build/",
+    "start": "node index.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC",
+  "description": "",
+  "dependencies": {
+    "@google/generative-ai": "^0.12.0",
+    "@langchain/core": "^0.3.19",
+    "@langchain/groq": "^0.1.2",
+    "axios": "^1.7.7",
+    "axois": "^0.0.1-security",
+    "body-parser": "^1.20.2",
+    "bson": "^6.8.0",
+    "cheerio": "^1.0.0",
+    "cors": "^2.8.5",
+    "dotenv": "^16.4.5",
+    "express": "^4.19.2",
+    "fs": "^0.0.1-security",
+    "gridfs": "^1.0.0",
+    "gridfs-stream": "^1.1.1",
+    "mongodb": "^6.7.0",
+    "mongoose": "^8.4.4",
+    "multer-gridfs-storage": "^5.0.2",
+    "path": "^0.12.7",
+    "pdf-parse": "^1.1.1",
+    "retry": "^0.13.1",
+    "socket.io": "^4.8.1",
+    "stream": "^0.0.3"
+  },
+  "devDependencies": {
+    "vite": "^5.4.8"
+  }
+}
